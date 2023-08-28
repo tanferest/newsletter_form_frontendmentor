@@ -1,0 +1,62 @@
+.hero {
+    background: url("../images/illustration-sign-up-mobile.svg") center / cover;
+    height: 40vh;
+    width: 100%;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+}
+
+.suscribe {
+    margin-top: 30px;
+    padding: 0 10%;
+    &__title {
+        font-weight: 700;
+        color: $dark-grey;
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+    &__text {
+        color: $charcoal-grey;
+    }
+    &__list {
+        list-style: none;
+        margin: 20px 0 35px 0;
+    }
+    &__li {
+        display: flex;
+        position: relative;
+        margin: 15px 0;
+        & i {
+            position: relative;
+            top: 2px;
+            margin-right: 7px;
+            color: $tomato;
+        }
+    }
+    &__label {
+        font-size: 0.75rem;
+        color: $dark-grey;
+        font-weight: 700;
+    }
+    &__input {
+        display: block;
+        margin-top: 5px;
+        width: 100%;
+        height: 50px;
+        border: 1px solid $grey;
+        border-radius: 5px;
+        padding-left: 5%;
+        &::placeholder {
+            color: $grey;
+        }
+    }
+    &__btn {
+        margin-top: 20px;
+        width: 100%;
+        height: 50px;
+        background-color: $dark-grey;
+        color: $white;
+        border-radius: 5px;
+        margin-bottom: 40px;
+    }
+}
