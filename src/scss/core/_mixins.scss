@@ -1,0 +1,6 @@
+@mixin desktop {
+    @media all and (min-width: 1440px) {
+      @content;
+    }
+  }
+  

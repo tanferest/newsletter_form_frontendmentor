@@ -4,6 +4,12 @@
     width: 100%;
     border-bottom-left-radius: 10%;
     border-bottom-right-radius: 10%;
+    @include desktop {
+        width: 45%;
+        height: 100%;
+        border-radius: 20px;
+        background: url("../images/illustration-sign-up-desktop.svg") center / cover;
+    }
 }
 
 .suscribe {
@@ -14,6 +20,9 @@
         color: $dark-grey;
         font-size: 2rem;
         margin-bottom: 20px;
+        @include desktop {
+            font-size: 3.5rem;
+        }
     }
     &__text {
         color: $charcoal-grey;
@@ -49,9 +58,21 @@
         &::placeholder {
             color: $grey;
         }
+        @include desktop {
+            margin-top: 7px;
+            height: 60px;
+            &:focus {
+                border: 1px solid $dark-grey;
+                color: $dark-grey;
+            }
+        }
     }
     &__btn {
         margin-top: 20px;
+    }
+    @include desktop {
+        width: 60%;
+        padding: 0 8%;
     }
 }
 
@@ -64,7 +85,7 @@
     padding: 35% 6% 10% 6%;
     color: $dark-grey;
     &__icon {
-        background: linear-gradient(to right top, rgb(244, 66, 125), rgb(255, 127, 72));
+        background: linear-gradient(to right top, #FF5473, #F96A3E);
         width: 60px;
         height: 60px;
         display: flex;
@@ -91,6 +112,29 @@
         position: absolute;
         width: 88vw;
         bottom: 20px;
+    }
+}
+
+.page__main {
+    @include desktop {
+        min-height: 100vh;
+        background-color: $charcoal-grey;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.main-section {
+    @include desktop {
+        background-color: $white;
+        width: 65%;
+        height: 70vh;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        padding: 20px;
+        border-radius: 20px;
     }
 }
 
