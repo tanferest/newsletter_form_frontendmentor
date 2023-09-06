@@ -4,9 +4,14 @@
     width: 100%;
     border-bottom-left-radius: 10%;
     border-bottom-right-radius: 10%;
+    @include tablet-p {
+        height: 30vh;
+        margin-bottom: 100px;
+    }
     @include desktop {
         width: 45%;
         height: 100%;
+        margin-bottom: 0;
         border-radius: 20px;
         background: url("../images/illustration-sign-up-desktop.svg") center / cover;
     }
@@ -142,6 +147,23 @@
     }
 }
 
+/* ----- Status changes ----- */
+.label-error {
+    display: flex;
+    justify-content: space-between;
+}
+
+.error-msg {
+    font-size: 0.75rem;
+    color: $tomato;
+    font-weight: 700;
+}
+
+.error-input {
+    border-color: $tomato;
+    background-color: rgba(255, 98, 87, 0.15);
+    color: $tomato;
+}
 
 .hidden {
     display: none;
