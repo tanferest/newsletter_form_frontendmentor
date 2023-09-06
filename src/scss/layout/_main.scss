@@ -15,13 +15,19 @@
 .suscribe {
     margin-top: 30px;
     padding: 0 10%;
+    @include desktop {
+        padding: 10px 7% 0 5%;
+        width: 60%;
+        height: 100%;
+        height: fit-content;
+    }
     &__title {
         font-weight: 700;
         color: $dark-grey;
         font-size: 2rem;
         margin-bottom: 20px;
         @include desktop {
-            font-size: 3.5rem;
+            font-size: 2.5rem;
         }
     }
     &__text {
@@ -35,6 +41,9 @@
         display: flex;
         position: relative;
         margin: 15px 0;
+        @include desktop {
+            margin: 10px 0;
+        }
         & i {
             position: relative;
             top: 2px;
@@ -59,8 +68,6 @@
             color: $grey;
         }
         @include desktop {
-            margin-top: 7px;
-            height: 60px;
             &:focus {
                 border: 1px solid $dark-grey;
                 color: $dark-grey;
@@ -70,9 +77,29 @@
     &__btn {
         margin-top: 20px;
     }
+}
+
+.page__main {
     @include desktop {
-        width: 60%;
-        padding: 0 8%;
+        min-height: 100vh;
+        background-color: $charcoal-grey;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.main-section {
+    @include desktop {
+        background-color: $white;
+        width: 65%;
+        max-width: 800px;
+        height: 70vh;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        padding: 20px;
+        border-radius: 20px;
     }
 }
 
@@ -115,28 +142,6 @@
     }
 }
 
-.page__main {
-    @include desktop {
-        min-height: 100vh;
-        background-color: $charcoal-grey;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-}
-
-.main-section {
-    @include desktop {
-        background-color: $white;
-        width: 65%;
-        height: 70vh;
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
-        padding: 20px;
-        border-radius: 20px;
-    }
-}
 
 .hidden {
     display: none;
