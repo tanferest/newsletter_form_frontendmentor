@@ -1,5 +1,5 @@
 <main class="page__main">
-    <div class="main-section">
+    <div class="main-section js_suscribe">
         <div class="hero"></div>
         <section class="suscribe">
             <h1 class="suscribe__title">Stay updated!</h1>
@@ -11,17 +11,17 @@
             </ul>
             <div class="label-error">
                 <label class="suscribe__label" for="email">Email address</label>
-                <p class="error-msg hidden">Valid email required</p>
+                <p class="error-msg hidden js_error">Valid email required</p>
             </div>
-            <input class="suscribe__input" type="text" id="email" placeholder="email@company.com">
+            <input class="suscribe__input js_input" type="text" id="email" placeholder="email@company.com" value="">
             <button class="suscribe__btn btn">Suscribe to monthly newsletter</button>
         </section>
     </div>
-    <section class="success hidden">
+    <section class="success hidden js_success">
         <div class="success__icon"><i class="fa-solid fa-check"></i></div>
         <h2 class="success__title">Thanks for subscribing!</h2>
         <p class="success__msg">
-            A confirmation email has been sent to <span class="success__email">ash@loremcompany.com</span>. Please open it and click the button inside to confirm your subscription.
+            A confirmation email has been sent to <span class="success__email"></span>. Please open it and click the button inside to confirm your subscription.
         </p>
         <button class="success__btn btn">Dismiss message</button>
     </section>
