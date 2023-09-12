@@ -4,16 +4,40 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Newsletter sign-up form</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/main.css" />
   </head>
 
   <body>
     <div class="page">
-      <header class="page__header">
-      </header>
-
       <main class="page__main">
+          <div class="main-section js_suscribe">
+              <div class="hero"></div>
+              <section class="suscribe">
+                  <h1 class="suscribe__title">Stay updated!</h1>
+                  <p class="suscribe__text">Join 60,000+ product managers receiving monthly updates on:</p>
+                  <ul class="suscribe__list">
+                      <li class="suscribe__li"><i class="fa-solid fa-circle-check"></i><p class="suscribe__text">Product discovery and building what matters</p></li>
+                      <li class="suscribe__li"><i class="fa-solid fa-circle-check"></i><p class="suscribe__text">Measuring to ensure updates are a success</p></li>
+                      <li class="suscribe__li"><i class="fa-solid fa-circle-check"></i><p class="suscribe__text">And much more!</p></li>
+                  </ul>
+                  <div class="label-error">
+                      <label class="suscribe__label" for="email">Email address</label>
+                      <p class="error-msg hidden js_error">Valid email required</p>
+                  </div>
+                  <input class="suscribe__input js_input" type="text" id="email" placeholder="email@company.com" value="">
+                  <button class="suscribe__btn btn">Suscribe to monthly newsletter</button>
+              </section>
+          </div>
+          <section class="success hidden js_success">
+              <div class="success__icon"><i class="fa-solid fa-check"></i></div>
+              <h2 class="success__title">Thanks for subscribing!</h2>
+              <p class="success__msg">
+                  A confirmation email has been sent to <span class="success__email"></span>. Please open it and click the button inside to confirm your subscription.
+              </p>
+              <button class="success__btn btn">Dismiss message</button>
+          </section>
       </main>
 
     </div>
